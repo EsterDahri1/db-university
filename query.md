@@ -46,6 +46,9 @@ AND `date` = '2020-06-20';
 
 ## Selezionare tutti i corsi di laurea magistrale (38)
 
+SELECT * 
+FROM `degrees` 
+WHERE `level` = 'magistrale';
 
 ## Da quanti dipartimenti è composta l'università? (12)
 
