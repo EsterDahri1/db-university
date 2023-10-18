@@ -58,6 +58,14 @@ FROM `exams`
 WHERE `hour` > '14:00:00' 
 AND `date` = '2020-06-20';
 
+<!--
+Other solution
+SELECT * 
+FROM `exams` 
+WHERE HOUR(`hour`) >= '14' 
+AND `date` = '2020-06-20';
+-->
+
 ## Selezionare tutti i corsi di laurea magistrale (38)
 
 SELECT * 
