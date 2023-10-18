@@ -77,8 +77,22 @@ WHERE `level` = 'magistrale';
 SELECT COUNT(`id`) 
 FROM `departments`;
 
+--OR--
+
+SELECT COUNT(*) 
+AS total_departments 
+FROM `departments`;
+
 ## Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
 
+<!--This is not correct because it does not say how many but which-->
 SELECT * 
 FROM `teachers` 
 WHERE `phone` IS NULL;
+
+<!--The correct answer was:-->
+SELECT COUNT(*)
+AS total_teachers_with_phone
+FROM `teachers`
+WHERE `phone`
+IS NULL;
