@@ -9,7 +9,9 @@ GROUP BY `anno_di_iscrizione`;
 ## Contare gli insegnanti che hanno l'ufficio nello stesso edificio
 
 ```sql
-
+SELECT COUNT(*) AS `number_of_teachers`,  `office_address` 
+FROM `teachers` 
+GROUP BY `office_address`;
 ```
 ## Calcolare la media dei voti di ogni appello d'esame
 ## Contare quanti corsi di laurea ci sono per ogni dipartimento
